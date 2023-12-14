@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer - Version (2.0)</title>
+
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div id="app">
+      <button id="toggle-mode">
+        <span class="sr-only">Ativar ligh mode!</span>
+        <i class="ph-bold ph-sun"></i>
+        <i class="ph-bold ph-moon"></i>
+      </button>
+  
+      <section id="timer" class="flex">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+  
+      <section id="controlsTimer" class="flex">
+        <button 
+          data-action="toggleRunning"
+          class="ph ph-play-circle">
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+        <button 
+          data-action="toggleRunning"
+          class="ph ph-pause-circle">
+          <span class="sr-only">Pausar contador</span>
+        </button>
+        <button 
+          data-action="reset"
+          class="ph ph-stop-circle secondary">
+          <span class="sr-only">Reiniciar contador</span>
+        </button>
+        <button 
+          data-action="setFiveMinutes"
+          class="ph ph-plus-circle secondary">
+          <span class="sr-only">Aumentar cinco minutos</span>
+        </button>
+        <button 
+          data-action="removeFiveMinutes"
+          class="ph ph-minus-circle secondary">
+          <span class="sr-only">Diminuir cinco minutos</span>
+        </button>
+      </section>
+    </div>
+    <div>
+      <section id="controlsMusic">
+        <button
+          data-action="mForest"
+          class="ph ph-tree"
+        >
+          <span class="sr-only">Música de fundo de Floresta</span>
+        </button>
+        <button
+          data-action="mRain"
+          class="ph ph-cloud-snow"
+        >
+          <span class="sr-only">Música de fundo de Chuva</span>
+        </button>
+        <button
+          data-action="mCoffeShop"
+          class="ph ph-storefront"
+        >
+          <span class="sr-only">Música de fundo de Cafeteria</span>
+        </button>
+        <button
+          data-action="mFireplace"
+          class="ph ph-fire-simple"
+        >
+          <span class="sr-only">Música de fundo de Lareira</span>
+        </button>
+      </section>
+    </div> 
+  </div>
+</body>
+</html>
